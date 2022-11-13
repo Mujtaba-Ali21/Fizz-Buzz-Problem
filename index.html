@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizz Buzz</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            height: 38px;
+            width: 73px;
+            background-color: #0d6efd;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0a58ca;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>If an integer is divisible by THREE its called “Fizz”, <br> If an integer is divisible by FIVE its called
+            “Buzz”
+            <br> And if an integer is divisible by both THREE and FIVE they will called "Fizz Buzz"
+        </h1>
+        <br>
+        <button onclick="myFunc()">Start</button>
+    </div>
+    <script>
+
+        function myFunc() {
+            var a = prompt("Enter a random integer value you want to generate")
+            var b = parseInt(a)
+
+
+
+            for (let i = 1; i < b; i++) {
+                if (i % 3 == 0) {
+                    document.write("<h2> fizz </h2>");
+
+                }
+
+                else if (i % 5 == 0) {
+                    document.write("<h2> buzz </h2>");
+                }
+
+                else {
+                    document.write(i)
+                    document.write("<br>");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
